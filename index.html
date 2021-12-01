@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My  Title</title>
+  <meta name="description" content="My Page Description">
+  <meta name="viewport" content=
+            "width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+  <input class="button" type="image" src="./images/brush.jpg" id="brush" onclick="brush()"/>
+  <input class="button" type="image" src="./images/rectangle.jpg" id="rectangle" onclick="isShape(this)"/>
+  <input class="button" type="image" src="./images/circle.jpg" id="circle" onclick="isShape(this)"/>
+  <input class="button" type="image" src="./images/star.jpg" id="star" onclick="isShape(this)"/>
+  <input class="button" type="image" src="./images/eraser.jpg" id="eraser" onclick="eraser()"/>
+  </div>
+
+  <div>
+  <input id="1" class="button" type="image" src="./images/1px.png" onclick="getWidth(this)"/>
+  <input id="5" class="button" type="image" src="./images/5px.png" onclick="getWidth(this)"/>
+  <input id="10" class="button" type="image" src="./images/10px.png" onclick="getWidth(this)"/>
+  <input id="15" class="button" type="image" src="./images/15px.png" onclick="getWidth(this)"/>
+  </div>
+  
+  <div>
+  <input  id="red" class="button" type="image" src="./images/red.png" onclick="color(this)"/>
+  <input  id="blue" class="button" type="image" src="./images/blue.png" onclick="color(this)"/>
+  <input  id="green" class="button" type="image" src="./images/green.png" onclick="color(this)"/>
+  <input  id="black" class="button" type="image" src="./images/black.png" onclick="color(this)"/>
+  </div>
+  
+  <div>
+  <a id="downloadLnk" download="your_image.jpg"><img class="button" alt="download" src="./images/download.png"/></a>
+  <input class="button" name="clear" type="image" src="./images/trash.jpg" id="clear" class="button" onclick="erase()"/>
+  </div>
+
+  <canvas id="canvas" class="canvas">
+  </canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
