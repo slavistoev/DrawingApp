@@ -38,7 +38,7 @@ function getWidth(obj) {
 }
 
 function erase() {
-  var m = confirm("Want to clear");
+  var m = confirm("Want to clear canvas?");
   if (m) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
